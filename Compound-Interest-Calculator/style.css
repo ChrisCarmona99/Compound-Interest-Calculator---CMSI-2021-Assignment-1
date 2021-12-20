@@ -1,0 +1,127 @@
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  gap: 100vh; 
+  height: auto;
+  background-image: linear-gradient(#020024, #02c5e6); 
+}
+
+h1 {
+  grid-column: 1 / span 2;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  width: 100%;
+  height: 50px; 
+  transition-duration: 200ms;
+  transition-property: all;
+  margin-top: 50px;
+
+}
+
+h1:hover {
+  background: #9ad4dd;
+  transform: scale(1.1, 1.2);
+}
+
+img {
+  width: auto; 
+  margin: auto;
+  display: grid;
+
+  border-style: solid;
+  border-width: 2px;
+  border-color: lightgrey;
+  margin-bottom: 10px
+}
+
+p {
+    word-spacing: 0.em;
+    line-height: 1.5;
+    text-align: center;
+    color: white;
+}
+
+#inputElements {
+  display: grid;
+  grid-area: auto;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-columns: auto auto;
+  column-gap: 1vh;
+  row-gap: 1vh;
+  padding: 10px;
+  text-align: right;
+  background-size: 100vh;
+  border-radius: 25px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #414141;
+  background: lightgray;
+}
+
+#p, #r, #n, #t, #A{
+  width: auto;
+  height: 40px; 
+  background: #02c5e6;
+  transition-duration: 200ms;
+  margin: auto, auto, auto, auto;
+  padding: auto;
+  border-radius: 25px;
+  border-style: solid;
+  border-width: 3px;
+  font-size: 25px;
+  text-align: left;
+}
+
+#A {
+  text-shadow: 1px 1px #0091ff;
+  width: auto;
+  height: 40px; 
+  border-radius: 25px;
+  background: #cccccc;
+  transition-duration: 200ms;
+}
+
+#p:hover {
+  background: #0091ff    
+}
+
+#r:hover {
+  background: #0091ff
+}
+
+#n:hover {
+  background: #0091ff
+}
+
+#t:hover {
+  background: #0091ff
+}
+
+#myProgress {
+  width: 100%;
+  background-color: lightgrey;
+}
+
+input:focus, textarea:focus {
+    background: #02c5e6;
+}
+
+@media screen and (max-device-width: 375px) {
+  #p, #r, #n, #t, #A {
+    width: 50vw;
+    height: 40px; 
+    background: #02c5e6;
+    transition-duration: 200ms;
+    margin: auto, auto, auto, auto;
+    padding: auto;
+
+    border-style: solid;
+    border-width: 3px;
+
+    font-size: 25px;
+    text-align: left;
+    text-shadow: 1px 1px lightgray;
+  }
+}
